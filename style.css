@@ -69,3 +69,7 @@ p{
   text-decoration: none;
   color: white;
 }
+
+#iframe{
+  border-radius: 10px 100px / 120px;
+}

@@ -73,7 +73,8 @@ p{
 #iframe{
   border-radius: 10px 100px / 120px;
 }
-#name {
+
+#name{
     display: inline-block;          /* shrink to content width */
     margin-top: 10px;               /* space from iframe */
     padding: 5px 15px;              /* space inside border */
@@ -84,4 +85,17 @@ p{
     font-size: 20px;                /* adjust as needed */
     text-align: center;             /* center text inside border */
     background-color: rgba(0,0,0,0.3); /* optional: semi-transparent background for readability */
+}
+
+#description{
+    display: inline-block;          /* shrink to content width */
+    margin-top: 10px;               /* space from the name */
+    padding: 5px 15px;              /* space inside border */
+    border: 2px solid white;        /* white border */
+    border-radius: 15px;            /* curved corners */
+    color: white;                   /* text color */
+    font-family: sans-serif;        /* match other text */
+    font-size: 16px;                /* slightly smaller than name */
+    text-align: center;             /* center text inside border */
+    background-color: rgba(0,0,0,0.3); /* optional semi-transparent background */
 }

@@ -64,5 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "Urban Sniper: Sharpshoot your way through the city challenges."
         );
     };
+    
+    window.archerHero = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://www.onlinegames.io/games/2023/unity/archer-hero/index.html",
+            "Archer Hero",
+            "In Archer Hero, we give you the possibility to enter the world of mysticism and magic.  Begin the journey by testing your archery abilities and eliminating potential enemies.  You can select from a variety of bows, arrows, and targets in order to improve your shooting skills.  Every level brings new challenges and rewards."
+        );
+    };
 
 });

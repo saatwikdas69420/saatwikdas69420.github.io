@@ -76,16 +76,16 @@ p{
 }
 
 #name, #description {
-    display: block;                /* stack vertically */
-    width: fit-content;            /* shrink to text width */
-    margin: 10px auto 0 auto;      /* center horizontally, 10px top margin */
-    padding: 5px 15px;             /* inner spacing */
-    border: 2px solid white;       /* white curved border */
-    border-radius: 15px;           /* curved corners */
-    text-align: center;            /* center text inside box */
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    padding: 5px 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
     font-family: sans-serif;
     color: white;
-    background-color: rgba(0,0,0,0.3); /* optional semi-transparent background */
+    background-color: rgba(0,0,0,0.3); 
 }
 
 #name {

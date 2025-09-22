@@ -75,30 +75,26 @@ p{
   border-radius: 10px 100px / 120px;
 }
 
-#name{
-    display: inline-block;          /* shrink to content width */
-    margin-top: 10px;               /* space from iframe */
-    padding: 5px 15px;              /* space inside border */
-    border: 2px solid white;        /* white border */
-    border-radius: 15px;            /* curved corners */
-    color: white;                   /* text color */
-    font-family: sans-serif;        /* match other text */
-    font-size: 20px;                /* adjust as needed */
-    text-align: center;             /* center text inside border */
-    background-color: rgba(0,0,0,0.3); /* optional: semi-transparent background for readability */
+#name, #description {
+    display: block;                /* stack vertically */
+    width: fit-content;            /* shrink to text width */
+    margin: 10px auto 0 auto;      /* center horizontally, 10px top margin */
+    padding: 5px 15px;             /* inner spacing */
+    border: 2px solid white;       /* white curved border */
+    border-radius: 15px;           /* curved corners */
+    text-align: center;            /* center text inside box */
+    font-family: sans-serif;
+    color: white;
+    background-color: rgba(0,0,0,0.3); /* optional semi-transparent background */
 }
 
-#description{
-    display: inline-block;          /* shrink to content width */
-    margin-top: 10px;               /* space from the name */
-    padding: 5px 15px;              /* space inside border */
-    border: 2px solid white;        /* white border */
-    border-radius: 15px;            /* curved corners */
-    color: white;                   /* text color */
-    font-family: sans-serif;        /* match other text */
-    font-size: 16px;                /* slightly smaller than name */
-    text-align: center;             /* center text inside border */
-    background-color: rgba(0,0,0,0.3); /* optional semi-transparent background */
+#name {
+    font-size: 20px;               /* slightly bigger */
+}
+
+#description {
+    font-size: 16px;               /* slightly smaller */
+    margin-top: 5px;               /* spacing from name */
 }
 
 body {

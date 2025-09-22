@@ -99,3 +99,14 @@ p{
     text-align: center;             /* center text inside border */
     background-color: rgba(0,0,0,0.3); /* optional semi-transparent background */
 }
+
+body {
+    background-image: url("BackgroundClouds.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    text-align: center;
+    min-height: 100vh;
+}

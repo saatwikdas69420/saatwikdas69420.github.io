@@ -36,3 +36,29 @@ function gtaSimulator() {
 }
 
 document.addEventListener('DOMContentLoaded', gtaSimulator);
+
+function realFlightSimulator() {
+  let website = "https://cloud.onlinegames.io/games/2023/unity2/real-flight-simulator/index.html";
+  let iframe = document.getElementById("iframe");
+
+  if (iframe) {
+    iframe.src = website;
+  } else {
+    console.error("Iframe not found!");
+  }
+}
+
+document.addEventListener('DOMContentLoaded', realFlightSimulator);
+
+function urbanSniper() {
+  let website = "https://www.onlinegames.io/games/2022/unity2/urban-sniper/index.html";
+  let iframe = document.getElementById("iframe");
+
+  if (iframe) {
+    iframe.src = website;
+  } else {
+    console.error("Iframe not found!");
+  }
+}
+
+document.addEventListener('DOMContentLoaded', urbanSniper);

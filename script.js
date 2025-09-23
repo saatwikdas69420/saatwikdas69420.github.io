@@ -73,5 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
             "In Archer Hero, we give you the possibility to enter the world of mysticism and magic.  Begin the journey by testing your archery abilities and eliminating potential enemies.  You can select from a variety of bows, arrows, and targets in order to improve your shooting skills.  Every level brings new challenges and rewards."
         );
     };
+    
+    window.stateWars = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://www.onlinegames.io/games/2024/construct/233/state-io-wars/index.html",
+            "State.io Wars",
+            "Give commands to your mini soldiers and try to get new lands!  State io Wars is a 2D war game where your objective is to conquer lands as much as possible.  To do that, send your troops to a neutral or your opponent's area and take it.  By directing your army wisely, you can achieve victory in this strategy game!"
+        );
+    };
 
 });

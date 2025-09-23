@@ -20,17 +20,16 @@ p{
 }
 
 .container {
-  position: relative;
-  width: 200px;
-  display: inline-block;
+    position: relative;
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
 }
-
 .image {
-  display: block;
-  width: 200px;
-  border-radius: 16px;
-  height: auto;
-  display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
 }
 
 .overlay {

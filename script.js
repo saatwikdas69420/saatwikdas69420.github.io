@@ -92,4 +92,12 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     };
 
+    window.darknessSurvivors = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://www.onlinegames.io/games/2024/q2/darkness-survivors/index.html",
+            "Darkness Survivors",
+            "Are you ready to battle with the darkness minions?  Darkness Survivors is a 2D action game where you try to remove dark creatures from the battlefield.  You have various hero characters to choose from. Just decide whether you want to slay them using a sword, boomerangs or other weapons."
+        );
+    };
 });

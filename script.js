@@ -83,4 +83,13 @@ document.addEventListener('DOMContentLoaded', function() {
         );
     };
 
+    window.geometryEscape = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://cloud.onlinegames.io/games/2024/construct/299/geometry-escape/index-og.html",
+            "Geometry Escape",
+            "Geometry Escape is an excellent choice for gamers looking for a skill game challenge, especially if you enjoy fast-paced platformers similar to Geometry Dash.  It's an online platformer game where you guide a cube on an obstacle course.  The cube moves automatically at a certain speed, and you'll control the jumps and flights to avoid obstacles on your path."
+        );
+    };
+
 });

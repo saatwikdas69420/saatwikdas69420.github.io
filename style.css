@@ -25,6 +25,7 @@ p{
     display: inline-block;
     margin: 10px;
 }
+
 .image {
     width: 100%;
     height: auto;
@@ -33,24 +34,30 @@ p{
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,140,186,0.7);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 140, 186, 0.7); /* semi-transparent blue */
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;                /* invisible initially */
+    transition: opacity 0.3s ease;
 }
+
 .container:hover .overlay {
-  opacity: 1;
+    opacity: 1;               /* visible on hover */
 }
 
-
+.overlay a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    pointer-events: auto;     /* ensures clicks work */
+}
 
 .text {
   color: white;

@@ -39,24 +39,24 @@ p{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 140, 186, 0.7); /* semi-transparent blue */
+    background-color: rgba(0, 140, 186, 0.7);
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;                /* invisible initially */
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .container:hover .overlay {
-    opacity: 1;               /* visible on hover */
+    opacity: 1;
 }
 
 .overlay a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    pointer-events: auto;     /* ensures clicks work */
+    pointer-events: auto;
 }
 
 .text {
@@ -95,12 +95,12 @@ p{
 }
 
 #name {
-    font-size: 20px;               /* slightly bigger */
+    font-size: 20px;
 }
 
 #description {
-    font-size: 16px;               /* slightly smaller */
-    margin-top: 5px;               /* spacing from name */
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 body {

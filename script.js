@@ -103,9 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
     window.findIt = function(event) {
         if (event) event.preventDefault();
         loadGame(
-            "https://www.onlinegames.io/games/2024/q2/darkness-survivors/index.html",
-            "Darkness Survivors",
-            "Are you ready to battle with the darkness minions?  Darkness Survivors is a 2D action game where you try to remove dark creatures from the battlefield.  You have various hero characters to choose from. Just decide whether you want to slay them using a sword, boomerangs or other weapons."
+            "https://cloud.onlinegames.io/games/2025/unity/find-it/index-og.html",
+            "Find It!",
+            "Looking for a cozy, sweet and oh-so adorable feel-good game?   Then Find It is the perfect game to play.  It's like wrapping yourself in a warm, fuzzy blanket but for your brain!  You start off in a kid's room, but it's not just any room."
         );
     };
 });

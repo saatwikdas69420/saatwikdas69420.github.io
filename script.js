@@ -108,4 +108,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "Looking for a cozy, sweet and oh-so adorable feel-good game?   Then Find It is the perfect game to play.  It's like wrapping yourself in a warm, fuzzy blanket but for your brain!  You start off in a kid's room, but it's not just any room."
         );
     };
+    window.kickThePirate = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://cloud.onlinegames.io/games/2022/construct/92/kick-the-pirate/index-og.html",
+            "Kick the Pirate",
+            "Ahoy matey!  Pirates may be brave on the high seas, but they’ve never met you.  In Kick the Pirate, your job is simple: turn this grumpy pirate into your personal punching bag.   He’s muttering curses or just standing there looking smug."
+        );
+    };
 });

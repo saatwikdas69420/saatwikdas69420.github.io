@@ -124,4 +124,18 @@ document.addEventListener('DOMContentLoaded', function() {
             "Snake Wars is a fun io game where you embody a cute snake trying to get bigger by eating food.  You must be the biggest one among the others in the pit.  Otherwise, you will become prey for them.  Avoid crashing with any other ones to achieve success in this thrilling snake game!"
         );
     };
+    
+    // Attach listeners to all game links
+    document.querySelectorAll("a[data-game]").forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const gameName = this.getAttribute("data-game");
+        if (typeof window[gameName] === "function") {
+            window[gameName](event);
+        } else {
+            console.error("No function found for", gameName);
+        }
+    });
+});
+
 });

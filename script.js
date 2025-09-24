@@ -116,4 +116,12 @@ document.addEventListener('DOMContentLoaded', function() {
             "Ahoy matey!  Pirates may be brave on the high seas, but they’ve never met you.  In Kick the Pirate, your job is simple: turn this grumpy pirate into your personal punching bag.   He’s muttering curses or just standing there looking smug."
         );
     };
+    window.snakeWars = function(event) {
+        if (event) event.preventDefault();
+        loadGame(
+            "https://www.onlinegames.io/games/2024/unity/snake-wars/index.html",
+            "Snake Wars",
+            "Snake Wars is a fun io game where you embody a cute snake trying to get bigger by eating food.  You must be the biggest one among the others in the pit.  Otherwise, you will become prey for them.  Avoid crashing with any other ones to achieve success in this thrilling snake game!"
+        );
+    };
 });

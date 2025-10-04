@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js" defer></script>
 </head>
-
 <body>
-  <div style="text-align: center;">
-    <img src="logo.png" alt="Logo">
+  <div class="page-center">
+    <img src="logo.png" alt="Logo" class="logo">
     <hr>
-    <h1>SuperFreeGamer.io</h1>
-    <p>Open for public testing...</p>
+    <h1>[Name goes here]</h1>
+    <p>Unfinished...</p>
     <hr>
     <h1>Games</h1>
-    <br>
 
-    <!-- Each button now has data attributes -->
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/857/responsive/troll-level-online-xs.jpg" alt="Troll Level" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="trollLevel">Troll Level</a></div>
+    <div class="games-grid">
+      <div class="game-card" data-game="trollLevel">
+        <img src="https://www.onlinegames.io/media/posts/857/responsive/troll-level-online-xs.jpg" alt="Troll Level">
+        <div class="overlay"><span>Troll Level</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/554/responsive/Capybara-Clicker-Pro-xs.jpg" alt="Capybara Clicker Pro" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="capybaraClickerPro">Capybara Clicker Pro</a></div>
+      <div class="game-card" data-game="capybaraClickerPro">
+        <img src="https://www.onlinegames.io/media/posts/554/responsive/Capybara-Clicker-Pro-xs.jpg" alt="Capybara Clicker Pro">
+        <div class="overlay"><span>Capybara Clicker Pro</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/416/responsive/GTA-Simulator-xs.jpg" alt="GTA Simulator" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="gtaSimulator">GTA Simulator</a></div>
+      <div class="game-card" data-game="gtaSimulator">
+        <img src="https://www.onlinegames.io/media/posts/416/responsive/GTA-Simulator-xs.jpg" alt="GTA Simulator">
+        <div class="overlay"><span>GTA Simulator</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/342/responsive/Real-Flight-Simulator-2-xs.jpg" alt="Real Flight Simulator" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="realFlightSimulator">Real Flight Simulator</a></div>
+      <div class="game-card" data-game="realFlightSimulator">
+        <img src="https://www.onlinegames.io/media/posts/342/responsive/Real-Flight-Simulator-2-xs.jpg" alt="Real Flight Simulator">
+        <div class="overlay"><span>Real Flight Simulator</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/322/responsive/Urban-Sniper-Game-xs.jpg" alt="Urban Sniper" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="urbanSniper">Urban Sniper</a></div>
+      <div class="game-card" data-game="urbanSniper">
+        <img src="https://www.onlinegames.io/media/posts/322/responsive/Urban-Sniper-Game-xs.jpg" alt="Urban Sniper">
+        <div class="overlay"><span>Urban Sniper</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/364/responsive/Archer-Hero-Online-xs.jpg" alt="Archer Hero" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="archerHero">Archer Hero</a></div>
+      <div class="game-card" data-game="archerHero">
+        <img src="https://www.onlinegames.io/media/posts/364/responsive/Archer-Hero-Online-xs.jpg" alt="Archer Hero">
+        <div class="overlay"><span>Archer Hero</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/685/responsive/State-io-Wars-xs.jpg" alt="State.io Wars" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="stateWars">State.io Wars</a></div>
+      <div class="game-card" data-game="stateWars">
+        <img src="https://www.onlinegames.io/media/posts/685/responsive/State-io-Wars-xs.jpg" alt="State.io Wars">
+        <div class="overlay"><span>State.io Wars</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/905/responsive/Geometry-Escape-xs.jpg" alt="Geometry Escape" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="geometryEscape">Geometry Escape</a></div>
+      <div class="game-card" data-game="geometryEscape">
+        <img src="https://www.onlinegames.io/media/posts/905/responsive/Geometry-Escape-xs.jpg" alt="Geometry Escape">
+        <div class="overlay"><span>Geometry Escape</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/696/responsive/Darkness-Survivors-xs.jpg" alt="Darkness Survivors" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="darknessSurvivors">Darkness Survivors</a></div>
+      <div class="game-card" data-game="darknessSurvivors">
+        <img src="https://www.onlinegames.io/media/posts/696/responsive/Darkness-Survivors-xs.jpg" alt="Darkness Survivors">
+        <div class="overlay"><span>Darkness Survivors</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/940/responsive/Find-It-xs.jpg" alt="Find It!" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="findIt">Find It!</a></div>
+      <div class="game-card" data-game="findIt">
+        <img src="https://www.onlinegames.io/media/posts/940/responsive/Find-It-xs.jpg" alt="Find It!">
+        <div class="overlay"><span>Find It!</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/1012/responsive/Kick-The-Pirate-xs.jpg" alt="Kick The Pirate" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="kickThePirate">Kick the Pirate</a></div>
+      <div class="game-card" data-game="kickThePirate">
+        <img src="https://www.onlinegames.io/media/posts/1012/responsive/Kick-The-Pirate-xs.jpg" alt="Kick The Pirate">
+        <div class="overlay"><span>Kick The Pirate</span></div>
       </div>
-    </div>
 
-    <div class="container">
-      <img src="https://www.onlinegames.io/media/posts/638/responsive/Snake-Wars-Free-Game-xs.jpg" alt="Snake Wars" class="image">
-      <div class="overlay">
-        <div class="text"><a href="indexTEST.html" data-game="snakeWars">Snake Wars</a></div>
+      <div class="game-card" data-game="snakeWars">
+        <img src="https://www.onlinegames.io/media/posts/638/responsive/Snake-Wars-Free-Game-xs.jpg" alt="Snake Wars">
+        <div class="overlay"><span>Snake Wars</span></div>
       </div>
     </div>
 
     <div id="Contacts"><p>Contacts: EMPTY</p></div>
   </div>
 </body>
-
 </html>

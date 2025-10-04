@@ -27,7 +27,7 @@ p { margin: 5px 0; }
   background-color: grey;
   padding: 10px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 /* Game Grid */
@@ -39,42 +39,60 @@ p { margin: 5px 0; }
   margin-top: 20px;
 }
 
+/* Each game card container */
 .game-card {
   position: relative;
-  width: 200px;
+  width: 200px;            
+  display: inline-block;   
+  margin: 10px;
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
 .game-card img {
   width: 100%;
+  height: auto;
   display: block;
+  border-radius: 16px;
 }
 
-.game-card:hover {
-  transform: scale(1.05);
-}
-
+/* Overlay (initially hidden) */
 .overlay {
-  position: absolute;
-  inset: 0;
+  position: absolute;      
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 140, 186, 0.7);
-  color: white;
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
-  padding: 5px;
+  pointer-events: none;
 }
 
+/* Overlay text */
+.overlay span {
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+/* Show overlay on hover or active */
 .game-card:hover .overlay,
 .game-card.active .overlay {
   opacity: 1;
+  pointer-events: auto;
+}
+
+/* Slight zoom on hover */
+.game-card:hover {
+  transform: scale(1.05);
 }
 
 /* Game Page iframe */
@@ -92,6 +110,7 @@ p { margin: 5px 0; }
   height: 100%;
   border: 0;
   display: block;
+  border-radius: 20px;
 }
 
 /* Name & Description */

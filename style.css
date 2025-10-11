@@ -42,8 +42,8 @@ p { margin: 5px 0; }
 /* Each game card container */
 .game-card {
   position: relative;
-  width: 200px;            
-  display: inline-block;   
+  width: 200px;
+  display: inline-block;
   margin: 10px;
   border-radius: 16px;
   overflow: hidden;
@@ -58,13 +58,10 @@ p { margin: 5px 0; }
   border-radius: 16px;
 }
 
-/* Overlay (initially hidden) */
+/* Overlay */
 .overlay {
-  position: absolute;      
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0, 140, 186, 0.7);
   border-radius: 16px;
   display: flex;
@@ -73,24 +70,23 @@ p { margin: 5px 0; }
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
-  pointer-events: none;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
-/* Overlay text */
 .overlay span {
   color: white;
   font-size: 18px;
   font-family: sans-serif;
+  pointer-events: none;
 }
 
-/* Show overlay on hover or active */
+/* Hover Effects */
 .game-card:hover .overlay,
 .game-card.active .overlay {
   opacity: 1;
-  pointer-events: auto;
 }
 
-/* Slight zoom on hover */
 .game-card:hover {
   transform: scale(1.05);
 }
